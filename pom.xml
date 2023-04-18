@@ -86,12 +86,15 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 
-				<!-- <configuration>
+				<!-- Run a testcase/ test suite
+				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
 						<include>**/*/TestRunner.java</include>
 					</includes>
-				</configuration>-->
+				</configuration> -->
+				
+				<!-- Run Parallel max 3 testcase/ test suite -->
 				<configuration>
 					<parallel>classes</parallel>
 					<forkMode>perthread</forkMode>
